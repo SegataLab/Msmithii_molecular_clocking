@@ -21,6 +21,9 @@ Where:
 `<CT_artefacts.txt>` Detected artificial sites of C/T substitution.
 `<GA_artefacts.txt>` Detected artificial sites of G/A substitution. 
 
+Outputs:
+two one-column text files (for CT and GA artificial substitutions respectively) containing detected sites' coordinates in the MSA file. Please check `example_data`
+
 ~~~Bash
 usage: ancient_artefacts_detector.py [-h] [-opt_CT OUTPUT_CT]
                                      [-opt_GA OUTPUT_GA]
@@ -61,6 +64,10 @@ Where:
 `<strain_heterogeneity_detecting_example.fna>` A FAST file containing one single continuous nucleotide sequence extracted from MSA
 `<strain_heterogeneity_detecting_example.bam>` A BAM file containing reads-contig alignment by mapping metagenomic reads against the extracted sequence from MSA.
 `<m__ppa3_SchirmerM_2016__G88704__bin.11>` The header name of the contig in `<strain_heterogeneity_detecting_example.fna>`  
+
+Output:
+
+A four-column text file: First column indicates the detected sites' coordinate in the MSA; Second column gives the dominant base; Third column is the possible alternatives based on mapping analysis; Fourth column is the dominance alllel rate for the detected sites. Note: here just reported sites < 0.8 dominance rate. 
 
 ~~~Bash
 usage: strain_heterogeneity_detector.py [-h] [mag] [bam] [contigs]
