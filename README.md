@@ -22,6 +22,7 @@ Where:
 `<GA_artefacts.txt>` Detected artificial sites of G/A substitution. 
 
 Outputs:
+
 two one-column text files (for CT and GA artificial substitutions respectively) containing detected sites' coordinates in the MSA file. Please check `example_data`
 
 ~~~Bash
@@ -67,7 +68,7 @@ Where:
 
 Output:
 
-A four-column text file: First column indicates the detected sites' coordinate in the MSA; Second column gives the dominant base; Third column is the possible alternatives based on mapping analysis; Fourth column is the dominance alllel rate for the detected sites. Note: here just reported sites < 0.8 dominance rate. 
+A four-column text file: First column indicates the detected sites' coordinate in the MSA; Second column gives the dominant base; Third column is the possible alternatives based on mapping analysis; Fourth column is the dominance alllel rate for the detected sites. Note: here just reported sites < 0.8 dominance rate. Please check `example_results`
 
 ~~~Bash
 usage: strain_heterogeneity_detector.py [-h] [mag] [bam] [contigs]
